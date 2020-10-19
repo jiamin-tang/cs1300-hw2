@@ -1,14 +1,187 @@
-<!doctype html>
-
-<html>
+<html lang="en">
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="bootstrap.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90f50068f8.js" crossorigin="anonymous"></script>
+    
+    <title>Redesign</title>
   </head>
-
+  
   <body>
-    <!-- TODO: put your HTML code here! -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#A86326;">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navdemo">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navdemo">
+          <ul class="navbar-nav nav nav-fill w-100">
+            <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#usabilityproblems">Usability Problems</a></li>
+            <li class="nav-item"><a class="nav-link" href="#visualredesign">Visual Redesign</a></li>
+            <li class="nav-item"><a class="nav-link" href="#responsiveredesign">Responsive Redesign</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+
+    <div class="main">
+      <div class="d-flex flex-column justify-content-center align-items-center top-pane">
+        <h0>Responsive Redesign</h0>
+      </div>
+
+      <div id="overview" class="container-fluid">
+        <h1>Overview</h1>
+        <h2>
+            This project practices the workflow of redesigning a website. The pipeline is dedicated to analyzing and identifying 
+            flaws in an existing interface, creating low-fidelity and high-fidelity prototypes for various screen sizes, 
+            and building a responsive website based on those prototypes.
+        </h2>
+      </div>
+
+      <div id="usabilityproblems" class="container-fluid">
+        <h1>Usability Problems</h1>
+        <h2>
+          <p><a style="color: black; font-weight: bold;" href="https://www.chongqinghouseri.com/order/main">The original website</a> is the online ordering 
+            page of a local restaurant in Providence. I analyzed the usability of the website using the following criteria: learnability, memorability and efficiency.
+          </p>
+        </h2>
+      </div>
+
+      <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="row text-center justify-content-center">
+          <div class="col-12">
+            <img class="img-fluid" src="images/website.png" alt="Original Website">
+            <h3>Original Website</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <span style="font-size:20px;" class="texteditor-inline-fontsize">Learnability &nbsp; 📚</span>
+        <ul style="font-size:20px;">
+          <li>Duplicate menu columns both on the left and middle which may confuse users</li>
+          <li>Unnoticeable search box at the bottom of the left column for quick operation</li>
+          <li>Additional information on the right column which is a little bit distracted</li> 
+        </ul>
+        <span style="font-size:20px;" class="texteditor-inline-fontsize">Memorability &nbsp; 👀</span>
+        <ul style="font-size:20px;">
+          <li>Pale layout without a consistent theme for the brand which is unmemorable</li>
+          <li>No featuring images of popular dishes for overvie</li>
+        </ul>
+        <span style="font-size:20px;" class="texteditor-inline-fontsize">Efficiency &nbsp; 📏</span>
+        <ul style="font-size:20px;">
+          <li>Tiny font size with low contrast</li>
+          <li>Too much white space under the menu categories</li>
+        </ul>
+
+        <h2>
+          <p>I further analyzed the accessibility using <a style="color: black; font-weight: bold;" href="https://wave.webaim.org/">WebAIM WAVE</a>. 
+            Most of the alerts and errors lie in the very low contrast between text and background colors, and the small text which is hard to read. 
+            Some other structural warnings such as skipped heading level and missing alternative text also exist.
+          </p>
+        </h2>
+      </div>
+
+      <div id="visualredesign" class="container-fluid">
+        <h1>Visual Redesign</h1>
+        <h2>
+          Based on the problems identified above, I created low-fidelity wireframes, high-fidelity prototypes and a visual design style guide. 
+          The screen is designed to be responsive with different layouts for mobile, tablet and desktop. Low-fi wireframes are annotated how they 
+          address the usability problems described earlier and high-fi prototypes are annotated how they satisfy the needs for responsive design 
+          and interactions with other pages. In this session, I also create a visual design style guide documenting interactive elements to keep 
+          their interactions consistent throughout the webpage.
+
+        </h2>
+      </div>
+      
+      <div class="container-fluid">
+        <h5>Low-fidelity Prototypes</h5>
+      </div>
+      
+
+      <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="row text-center justify-content-center">
+          <div class="col-12">
+            <img class="img-fluid" src="images/lowfi1.png" alt="Low-fi on desktop">
+            <h3>Low-fi Wireframe on Desktop</h3>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-6">
+            <img class="img-fluid" src="images/lowfi2.png" alt="Low-fi on tablet">
+            <h3>Low-fi Wireframe on Tablet</h3>
+          </div>
+          <div class="col-6">
+            <img class="img-fluid" src="images/lowfi3.png" alt="Low-fi on mobile">
+            <h3>Low-fi Wireframe on Mobile</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h5>High-fidelity Prototypes</h5>
+      </div>
+
+      <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="row text-center justify-content-center">
+          <div class="col-12">
+            <img class="img-fluid" src="images/hifi1.png" alt="High-fi on desktop">
+            <h3>High-fi Wireframe on Desktop</h3>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-6">
+            <img class="img-fluid" src="images/hifi2.png" alt="High-fi on tablet">
+            <h3>High-fi Wireframe on Tablet</h3>
+          </div>
+          <div class="col-6">
+            <img class="img-fluid" src="images/hifi3.png" alt="High-fi on mobile">
+            <h3>High-fi Wireframe on Mobile</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h5>Style Guide</h5>
+      </div>
+
+      <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="row text-center justify-content-center">
+          <div class="col-12">
+            <img class="img-fluid" src="images/design.png" alt="Style Guide">
+            <h3>Style Guide</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="responsiveredesign" class="container-fluid">
+        <h1>Responsive Redesign</h1>
+        <h2>
+          <p>Following the steps above, I finally created the
+            <a style="color: black; font-weight: bold;" href="https://mighty-everglades-70471.herokuapp.com/">webpage</a> using HTML and CSS. 
+            The webpage is designed to be responsive for the range of view on laptop, tablet and mobile. For example, on tablet and mobile devices, 
+            there are no margins on the side, and the layout of main menu columns differ. The collapsed navbar will be in the format of hamburger 
+            menu on mobile. The font size will also change responsively on different devices.
+
+        </h2>
+      </div>
+      
+    </div> 
+
+    <footer class="py-3" style="background-color: #A86326;">
+      <div class="container text-center">
+          <p class="mb-0">© 2020</a><br>
+      </div>
+    </footer>
+    
+  
   </body>
+  
 </html>
